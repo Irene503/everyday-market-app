@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Browse categories at Irene's Farmers Market">
+    <title>Products</title>
+</head>
+<body>
+
+    <header>
+        <div class="header">
+            <img src="assets/logo.jpg" alt="Irene's Farmers Market" class="logo">
+            <h1>Irene's Farmers Market</h1>
+        </div>
+    </header>
+
+    <main>
+        <div class="market-container">
+            <ul>
+                <li *ngFor="let category of categories; let i = index" (click)="toggleCategory(i)">
+                    {{ category.name }}
+                    <ul *ngIf="category.open">
+                        <li *ngFor="let item of category.items">{{ item }}</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Irene's Farmers Market. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
+
+
+  

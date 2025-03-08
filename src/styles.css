@@ -1,0 +1,23 @@
+.market-container {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    margin-top: 20px;
+  }
+  
+  .logo {
+    width: 150px;
+    height: auto;
+    margin-bottom: 10px;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  li {
+    font-size: 20px;
+    margin: 10px 0;
+    font-weight: bold;
+  }
+  
